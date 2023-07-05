@@ -167,8 +167,8 @@ function init() {
     controls.minDistance = 10;
     controls.maxPolarAngle = 1.5;
     controls.minPolarAngle = 1.5;
-    // controls.maxAzimuthAngle = 0.6;
-    // controls.minAzimuthAngle = -0.6;
+    controls.maxAzimuthAngle = 0.6;
+    controls.minAzimuthAngle = -0.6;
     controls.enableDamping = true;
     controls.dampingFactor = 0.03;
     controls.enablePan = false;
