@@ -17,7 +17,7 @@ init();
 let loadedModel;
 
 const glftLoader = new GLTFLoader();
-glftLoader.load('./assets/addieroom_v2.glb', (gltfScene) => {
+glftLoader.load('addieroom_v2.glb', (gltfScene) => {
     loadedModel = gltfScene;
 
     gltfScene.scene.traverse(function (child) {
@@ -49,7 +49,7 @@ glftLoader.load('./assets/addieroom_v2.glb', (gltfScene) => {
 //art canvas
 const geometry = new THREE.BoxGeometry(0.01, 1, 1.5);
 const textureLoader = new THREE.TextureLoader();
-const texture = textureLoader.load('./assets/seulgi1.jpg'); // Replace 'path/to/your/image.jpg' with the actual path to your image file
+const texture = textureLoader.load('seulgi1.jpg'); // Replace 'path/to/your/image.jpg' with the actual path to your image file
 // Adjust texture mapping
 texture.wrapS = THREE.RepeatWrapping;
 //texture.wrapT = THREE.RepeatWrapping;
@@ -74,7 +74,7 @@ cube.position.z = -1.81; // Move the cube -2 units along the z-axis
 //art canvas
 
 const textureLoader2 = new THREE.TextureLoader();
-const texture2 = textureLoader2.load('./assets/seulgi2.jpg'); // Replace 'path/to/your/image.jpg' with the actual path to your image file
+const texture2 = textureLoader2.load('seulgi2.jpg'); // Replace 'path/to/your/image.jpg' with the actual path to your image file
 // Adjust texture mapping
 texture2.wrapS = THREE.RepeatWrapping;
 //texture2.wrapT = THREE.RepeatWrapping;
