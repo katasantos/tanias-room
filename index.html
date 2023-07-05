@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<title>Tania's Room</title>
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Quicksand', sans-serif;
+		}
+
+		#info {
+			position: absolute;
+		
+			text-align: left;
+			margin: 50px;
+			z-index: 100;
+			display: block;
+			color: white;
+			font-family: 'Quicksand', sans-serif;
+			font-size: xx-large;
+			border: 1px solid white;
+			padding: 10px;
+		}
+
+		#instruction {
+			position: absolute;
+			text-align: left;
+			top: 250px; /* Adjust the top offset as needed */
+			margin-left: 50px; /* Adjust the left margin as needed */
+			z-index: 100;
+			display: inline-block;
+			color: white;
+			font-family: 'Quicksand', sans-serif;
+			font-size: x-large;
+		}
+
+		.b {
+			font-weight: 700;
+		}
+
+		ul {
+			list-style-type: none;
+			margin-left: -1em;
+		}
+		
+		ul li::before {
+			content: "\25C6"; /* Unicode character for diamond */
+
+			margin: 0.2em;
+  		}
+		
+	</style>
+</head>
+
+<body>
+	<div id="info">Tania's Room</div>
+	<div id="instruction"></div>
+	<div id="root"></div>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">Social Media</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+			
+					<ul>
+						<li><b class="b">Facebook:</b> https://www.facebook.com/atnespiritu </li>
+						<li><b class="b">Twitter:</b> ??? </li>
+						<li><b class="b">Instagram:</b> taniabelles </li>
+					</ul>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="module" src="/main.js"></script>
+</body>
+
+</html>
