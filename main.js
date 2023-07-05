@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { Modal } from 'bootstrap'
 
 const raycaster = new THREE.Raycaster();
 const pointer = new THREE.Vector2();
@@ -253,7 +254,7 @@ function handleClick(event) {
         if (objectName == "Monitor_2" || objectName == "Monitor_1") {
          
             // Activate the modal using Bootstrap's JavaScript API
-            const myModal = new bootstrap.Modal(document.getElementById('myModal'));
+            let myModal = new Modal(document.getElementById('myModal'));
             myModal.show();
         }
         // Perform any other actions or operations on the clicked object
